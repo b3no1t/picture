@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture and media queries</title>
+  </head>
+  <body>
+    <h1>Picture</h1>
+    <picture>
+      <source media="(min-width: 850px)" srcset="./imgs/img_food.jpg" />
+      <source media="(min-width: 465px)" srcset="./imgs/img_car.jpg" />
+      <img src="./imgs/img_girl.jpg" style="width: auto" alt="toto" />
+    </picture>
+    <hr />
+    <h2>Recadrer</h2>
+    <picture>
+      <source
+        srcset="./imgs/large.jpg"
+        media="(min-width: 960px)"
+        width="1280"
+        height="600"
+      />
+      <source
+        srcset="./imgs/medium.png"
+        media="(min-width: 500px)"
+        width="800"
+        height="400"
+      />
+      <img
+        src="./imgs/small.png"
+        alt="Image Description"
+        width="350"
+        height="400"
+      />
+    </picture>
+  </body>
+</html>
